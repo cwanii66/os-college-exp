@@ -1,0 +1,5 @@
+argc = 4
+Argument 0: ./argtest
+Argument 1: hello
+Argument 2: shell
+Argument 3: script
