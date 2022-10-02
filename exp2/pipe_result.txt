@@ -1,0 +1,6 @@
+Before fork, PID = 99023, PPID = 95391. 
+In child process, PID = 99024, PPID = 99023. 
+Before fork, PID = 99023, PPID = 95391. 
+In parent process, child's PID = 99024. 
+In parent process, PID = 99023, PPID = 95391. 
+Before return in main(), PID = 99023, PPID = 95391. 
