@@ -24,9 +24,9 @@ int main()
     printf("\n");
 
     // ----- A -----
-    sleep(3);
+    sleep(3); // 程序暂停3秒
     // ----- B -----
-    // exit(0);
+    // exit(0); // 退出进程
   }
   else
   {
@@ -38,7 +38,7 @@ int main()
     printf("\n");
 
     // ----- C -----
-    // wait(NULL);
+    // wait(NULL); // 父进程等待子进程中断或结束
   }
 
   printf("Before return in main(), PID = %d, PPID = %d. ", getpid(), getppid());
@@ -46,4 +46,3 @@ int main()
 
   return (EXIT_SUCCESS);
 }
-
