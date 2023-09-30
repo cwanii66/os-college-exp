@@ -5,7 +5,7 @@
 
 int main()
 {
-  int fd[3], pid1, pid2;
+  int fd[2], pid1, pid2;
   char OutPipe[100], InPipe[100];
   pipe(fd); //创建管道，fd[0]指向管道的读端，fd[1]指向管道的写端
   while ((pid1 = fork()) == -1);

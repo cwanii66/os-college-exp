@@ -28,7 +28,7 @@ int main()
     // ----- B -----
     // exit(0); // 退出进程
   }
-  else
+  else // 父进程中，pid是返回的子进程id
   {
     /* the parent process */
     printf("In parent process, child's PID = %d. ", pid);
@@ -41,6 +41,7 @@ int main()
     // wait(NULL); // 父进程等待子进程中断或结束
   }
 
+  // 父子进程共享
   printf("Before return in main(), PID = %d, PPID = %d. ", getpid(), getppid());
   printf("\n");
 
