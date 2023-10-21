@@ -125,7 +125,7 @@ void *consumer(void *arg) {
     for (int i = 0; i <= buffer_index; i++) {
       if (buffer[i].type != consumer_id) {
         buffer[j] = buffer[i];
-        if (i == buffer_index) break;
+        if (i == buffer_index) break; // 保证j在以后不会越界
         j++;
       }
     }
